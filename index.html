@@ -1,168 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1aa8315ab7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/index.css" />
     <title>Family Website</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar">
-                <div id="logo"><a href="index.html">Family<span> Website</span></a></div>
-                <div class="navbox">
-                    <ul>
-                        <li class="navitems"><a href="index.html" class="active">HOME</a></li>
-                        <li class="navitems"><a href="members.html" class="">MEMBERS</a></li>
-                        <li class="navitems"><a href="gallery.html" class="">GALLERY</a></li>
-                        <li class="navitems"><a href="residence.html" class="">RESIDENCE</a></li>
-                        <li class="navitems"><a href="about_me.html" class="">ABOUT ME</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div id="header-content">
-            <h1 class="main-heading">Welcome to our Family website</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae voluptas soluta aliquid assumenda nesciunt autem vitae non, sunt animi!</p>
-            <a href="#members"><button class="btn" >EXPLORE</button></a>
-            <div class="arrow">	&#9660;</div>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <div id="logo">
+          <a href="index.html">Family<span> Website</span></a>
         </div>
+        <div class="navbox">
+          <ul>
+            <li class="navitems">
+              <a href="index.html" class="active">HOME</a>
+            </li>
+            <li class="navitems">
+              <a href="members.html" class="">MEMBERS</a>
+            </li>
+            <li class="navitems">
+              <a href="gallery.html" class="">GALLERY</a>
+            </li>
+            <li class="navitems">
+              <a href="residence.html" class="">RESIDENCE</a>
+            </li>
+            <li class="navitems">
+              <a href="about_me.html" class="">ABOUT ME</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburgerButton">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <!-- content -->
+      <div id="header-content">
+        <h1 class="main-heading">Welcome to our Family website</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est
+          ducimus atque assumenda modi molestias, nobis id expedita neque? Dolor
+          aliquid aut unde culpa ipsum quo, error assumenda eligendi eius
+          aliquam odio voluptatem harum dignissimos quis, molestias voluptate
+          voluptatum perspiciatis molestiae illo consequuntur rem, laudantium
+          porro. Voluptate, labore assumenda? Minima.
+        </p>
+        <a href="#members"><button class="btn">EXPLORE</button></a>
+        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      </div>
     </header>
     <section>
-        <div id="members">
-            <h1 class="heading">MEMBERS</h1>
-            <hr>
-                <p class="under-heading">There are 5 members in our family. My father, mother and us three brothers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque error consectetur maiores corrupti ipsum voluptatum reiciendis, exercitationem voluptatem culpa!</p>
-                <div class="name-container">
-                <div class="namebox">
-                    <div class="namecard">
-                        <div class="imgbox" id="father"></div>
-                        <div class="details-area">
-                            <div class="namecard-details">
-                                <h1>Mr.Bhagwan das<br><span>Father</span></h1>
-                                <h2>Government Employee <br><span></span></h2>
-                                <button class="btn-knowmore" onclick="document.location='members.html'">Know More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="namecard">
-                        <div class="imgbox" id="mother"></div>
-                        <div class="details-area">
-                            <div class="namecard-details">
-                                <h1>Mrs.Neelam devi<br><span>Mother</span></h1>
-                                <h2>House Wife <br><span></span></h2>
-                                <button class="btn-knowmore" onclick="document.location='members.html'">Know More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="namecard">
-                        <div class="imgbox" id="myimage"></div>
-                        <div class="details-area">
-                            <div class="namecard-details" id="self">
-                                <h1>Vishnu kumar<br><span>Self</span></h1>
-                                <h2>Programmer and Web Developer <br><span></span></h2>
-                                <button class="btn-knowmore" onclick="document.location='about_me.html'">Know More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="namecard">
-                        <div class="imgbox" id="Koshal"></div>
-                        <div class="details-area">
-                            <div class="namecard-details">
-                                <h1>Koshal kumar<br><span>Brother</span></h1>
-                                <h2>Student <br><span></span></h2>
-                                <button class="btn-knowmore" onclick="document.location='members.html'">Know More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="namecard">
-                        <div class="imgbox" id="Gagan"></div>
-                        <div class="details-area">
-                            <div class="namecard-details">
-                                <h1>Gagan kumar<br><span>Brother</span></h1>
-                                <h2>Student <br><span></span></h2>
-                                <button class="btn-knowmore" onclick="document.location='members.html'">Know More</button>
-                            </div>
-                        </div>
-                    </div>
+      <div id="members">
+        <h1 class="heading">MEMBERS</h1>
+        <hr />
+        <p class="under-heading">
+          There are 5 members in our family. My father, mother and us three
+          brothers. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Officia neque error consectetur maiores corrupti ipsum voluptatum
+          reiciendis, exercitationem voluptatem culpa!
+        </p>
+        <div class="name-container">
+          <div class="namebox">
+            <div class="namecard">
+              <div class="imgbox" id="father"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Mr.Bhagwan das<br /><span>Father</span></h1>
+                  <h2>Government Employee <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
                 </div>
+              </div>
             </div>
+            <div class="namecard">
+              <div class="imgbox" id="mother"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Mrs.Neelam devi<br /><span>Mother</span></h1>
+                  <h2>House Wife <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="myimage"></div>
+              <div class="details-area">
+                <div class="namecard-details" id="self">
+                  <h1>Vishnu kumar<br /><span>Self</span></h1>
+                  <h2>Programmer and Web Developer <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='about_me.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="Koshal"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Koshal kumar<br /><span>Brother</span></h1>
+                  <h2>Student <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="Gagan"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Gagan kumar<br /><span>Brother</span></h1>
+                  <h2>Student <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="gallery">
-            <h1 class="heading">GALLERY</h1>
-            <hr>
-                <p class="under-heading">Here are some of our photos on different occasions, celebrations, moments and random ones too. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo quo ad pariatur natus beatae quae reiciendis ipsa atque reprehenderit?</p>
-            <div class="photobox">
-                <img src="/images/occasion-pics/1.jpg" alt="">
-                <img src="/images/occasion-pics/2.jpg" alt="">
-                <img src="/images/occasion-pics/p1.jpg" alt="">
-                <img src="/images/occasion-pics/p10.jpg" alt="">
-                <img src="/images/occasion-pics/p11.jpg" alt="">
-                <img src="/images/occasion-pics/p12.jpg" alt="">
-                <!-- <a href="#" id="gallery-link"><img src="/images/occasion-pics/p13.jpg" alt=""></a> -->
+      </div>
+      <div id="gallery">
+        <h1 class="heading">GALLERY</h1>
+        <hr />
+        <p class="under-heading">
+          Here are some of our photos on different occasions, celebrations,
+          moments and random ones too. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Saepe explicabo quo ad pariatur natus beatae quae
+          reiciendis ipsa atque reprehenderit?
+        </p>
+        <div class="photobox">
+          <img src="/images/occasion-pics/1.jpg" alt="" />
+          <img src="/images/occasion-pics/2.jpg" alt="" />
+          <img src="/images/occasion-pics/p1.jpg" alt="" />
+          <img src="/images/occasion-pics/p10.jpg" alt="" />
+          <img src="/images/occasion-pics/p11.jpg" alt="" />
+          <img src="/images/occasion-pics/p12.jpg" alt="" />
+          <!-- <a href="#" id="gallery-link"><img src="/images/occasion-pics/p13.jpg" alt=""></a> -->
 
-                <!-- <img src="/images/occasion-pics/p14.jpg" alt="">
+          <!-- <img src="/images/occasion-pics/p14.jpg" alt="">
                 <img src="/images/occasion-pics/p15.jpg" alt=""> -->
-                
-                <img src="/images/occasion-pics/p16.jpg" alt="">
-                <img src="/images/occasion-pics/p17.jpg" alt="">
-                <img src="/images/occasion-pics/p18.jpg" alt="">
-                <img src="/images/occasion-pics/p19.jpg" alt="">
-                <img src="/images/occasion-pics/p2.jpg" alt="">
-                <img src="/images/occasion-pics/p3.jpg" alt="">
-                <img src="/images/occasion-pics/p4.jpg" alt="">
-                <img src="/images/occasion-pics/p5.jpg" alt="">
-                <img src="/images/occasion-pics/p6.jpg" alt="">
-                <img src="/images/occasion-pics/p7.jpg" alt="">
-                <img src="/images/occasion-pics/p8.jpg" alt="">
-                <img src="/images/occasion-pics/p9.jpg" alt="">
-            </div>
-            <a href="gallery.html"><div class="navigation-arrow"><p> &#8594; </p></div></a>
+
+          <img src="/images/occasion-pics/p16.jpg" alt="" />
+          <img src="/images/occasion-pics/p17.jpg" alt="" />
+          <img src="/images/occasion-pics/p18.jpg" alt="" />
+          <img src="/images/occasion-pics/p19.jpg" alt="" />
+          <img src="/images/occasion-pics/p2.jpg" alt="" />
+          <img src="/images/occasion-pics/p3.jpg" alt="" />
+          <img src="/images/occasion-pics/p4.jpg" alt="" />
+          <img src="/images/occasion-pics/p5.jpg" alt="" />
+          <img src="/images/occasion-pics/p6.jpg" alt="" />
+          <img src="/images/occasion-pics/p7.jpg" alt="" />
+          <img src="/images/occasion-pics/p8.jpg" alt="" />
+          <img src="/images/occasion-pics/p9.jpg" alt="" />
         </div>
-        <div id="residence">
-            <h1 class="heading">RESIDENCE</h1>
-            <hr>
-            <p class="under-heading">Basically we are from Mendu but lives in Hathras city from which Mendu is 7-8 km away.And if I talk about our residence address. Here it is.</p>
-            <div class="content">
-                <div class="address">
-                    <div class="residence-box" id="description">
-                        <p> Navipur khurd, near pathwari mandir, street no. 4, Hathras</p>
-                    </div>
-                    <div class="residence-box" id="location">
-                        <iframe class="location-tag" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.0495861592105!2d78.04576772915351!3d27.587379687556513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974859a64fcedf1%3A0xcb9a1087071d62c6!2sGagan%20computer%20point!5e0!3m2!1sen!2sin!4v1660041462120!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <h2 class="sub-heading">- Here are some pictures of our beautiful home city Hathras -</h2>
-                <hr id="tubelight">
-                <div class="city-pics">
-                    <img src="/images/city-pics/station banner.jpg" alt="image" >
-                    <img src="/images/city-pics/bohrewalidevi.jpg" alt="image" >
-                    <img src="/images/city-pics/bridge.webp" alt="image" >
-                    <img src="/images/city-pics/dauji bhagwan.jpg" alt="image" >
-                    <img src="/images/city-pics/dauji mandir.jpg" alt="image" >
-                    <img src="/images/city-pics/ghantaghar.jpg" alt="image" >
-                    <img src="/images/city-pics/kamla bazar.jpg" alt="image" >
-                    <img src="/images/city-pics/punjabi market.avif" alt="image" >
-                    <img src="/images/city-pics/ram mandir.avif" alt="image" >
-                    <img src="/images/city-pics/station.jpg" alt="image" >
-                </div>
+        <a href="gallery.html"
+          ><div class="navigation-arrow"><p>&#8594;</p></div></a
+        >
+      </div>
+      <div id="residence">
+        <h1 class="heading">RESIDENCE</h1>
+        <hr />
+        <p class="under-heading">
+          Basically we are from Mendu but lives in Hathras city from which Mendu
+          is 7-8 km away.And if I talk about our residence address. Here it is.
+        </p>
+        <div class="content">
+          <div class="address">
+            <div class="residence-box" id="description">
+              <p>Navipur khurd, near pathwari mandir, street no. 4, Hathras</p>
             </div>
+            <div class="residence-box" id="location">
+              <iframe
+                class="location-tag"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.0495861592105!2d78.04576772915351!3d27.587379687556513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974859a64fcedf1%3A0xcb9a1087071d62c6!2sGagan%20computer%20point!5e0!3m2!1sen!2sin!4v1660041462120!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <h2 class="sub-heading">
+            - Here are some pictures of our beautiful home city Hathras -
+          </h2>
+          <hr id="tubelight" />
+          <div class="city-pics">
+            <img src="/images/city-pics/station banner.jpg" alt="image" />
+            <img src="/images/city-pics/bohrewalidevi.jpg" alt="image" />
+            <img src="/images/city-pics/bridge.webp" alt="image" />
+            <img src="/images/city-pics/dauji bhagwan.jpg" alt="image" />
+            <img src="/images/city-pics/dauji mandir.jpg" alt="image" />
+            <img src="/images/city-pics/ghantaghar.jpg" alt="image" />
+            <img src="/images/city-pics/kamla bazar.jpg" alt="image" />
+            <img src="/images/city-pics/punjabi market.avif" alt="image" />
+            <img src="/images/city-pics/ram mandir.avif" alt="image" />
+            <img src="/images/city-pics/station.jpg" alt="image" />
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <p>Made with  <i class="fa fa-heart"></i>  by V1SHNU</p>
-        <div id="connect">
-            <a href="https://www.instagram.com/i_m_v1shnu/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://www.facebook.com/scientist.vishnu" target="_blank" class="fa fa-facebook"></a>
-            <!-- <a href="https://www.instagram.com/billionaire.s_club/" target="_blank" class="fa fa-instagram"></a> -->
-            <a href="https://www.linkedin.com/in/vishnu-kumar-7ba835247" target="_blank" class="fa fa-linkedin"></a>
-        </div>
+      <p>Made with <i class="fa fa-heart"></i> by V1SHNU</p>
+      <div id="connect">
+        <a
+          href="https://www.instagram.com/i_m_v1shnu/"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.facebook.com/scientist.vishnu"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <!-- <a href="https://www.instagram.com/billionaire.s_club/" target="_blank" class="fa fa-instagram"></a> -->
+        <a
+          href="https://www.linkedin.com/in/vishnu-kumar-63a041221/"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
