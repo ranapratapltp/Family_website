@@ -10,22 +10,30 @@ html{
 body{
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
-    height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 nav{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
-    background: rgba(0, 0, 0, 0.534);
+    position: fixed;
+    top: 8px;
     width: 100%;
-    padding:10px 30px;
-    z-index: 1;
+    z-index: 999;
 }
 .navbar{
     /* filter: blur(8px); */
-    width: 100%;
+    width: 98.5%;
     margin: auto;
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid rgba(255, 255, 255, 0.25); */
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    padding:10px 30px;
+    border-radius: 100px;
+    /* filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.5)); */
+    
 }
 #logo{
     float: left;
@@ -36,13 +44,17 @@ nav{
     text-decoration: none;
     font-size: 3rem;
     font-weight: 600;
-    padding: 10px;
+    padding: 10px 0;
 }
 #logo span{
     color: tomato;
 }
 .navbox{
     float: right;
+}
+.hamburgerButton{
+    color: white;
+    display: none;
 }
 .navitems{
     list-style: none;
@@ -80,8 +92,8 @@ nav{
     width: 100%;
 }
 header{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     color: white;
 }
 
@@ -90,24 +102,28 @@ header::before{
     position: absolute;
     background: url('/images/f4.jpg') no-repeat center center/cover;
     z-index: -1;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     filter: brightness(50%);
 }
 header #header-content{
     height: 100vh;
-    width: 100vw;
-    padding: 0px 200px;
+    width: 100%;
+    padding: 0px 1rem;
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 header #header-content .main-heading{
+    margin-top: 5rem;
     font-size: 5rem;
+    text-align: center;
 }
 header #header-content p{
-    padding: 0px 200px;
+    max-width: 600px;
+    padding: 0px 2rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 200;
@@ -131,9 +147,8 @@ header #header-content p{
 }
 .arrow{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 330px;
+    bottom: 5rem;
+    /* margin-top: 8rem; */
     animation: arrow 2.3s ease-in-out infinite;
 }
 @keyframes arrow{
@@ -154,27 +169,28 @@ section{
     background-image: linear-gradient(to right top, #0b1e3b, #502f58, #92405c, #c0624c, #cb983d);
     color: white;
     padding: 20px 0px;
-    width: 100vw;
+    width: 100%;
 }
 .members{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     margin: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .name-container{
     position: relative;
-    height: 300px;
     width: 100%;
     margin: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid red;
 }
 .namebox{
-    position: absolute;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -290,12 +306,13 @@ section{
 
 
 .photobox{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
     transform: rotate(-5deg);
+    /* overflow-x: hidden; */
 }
 .photobox img{
     height: 200px;
@@ -305,6 +322,9 @@ section{
 }
 .photobox img:hover{
     transform: scale(150%);
+}
+#gallery{
+    overflow:hidden;
 }
 #gallery .navigation-arrow{
     color: white;
@@ -333,6 +353,7 @@ section{
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .address .residence-box{
@@ -368,6 +389,8 @@ section{
 .city-pics{
     margin: 50px 0px;
     padding: 10px 10px;
+    margin-inline: auto;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,7 +399,8 @@ section{
 }
 .city-pics img{
     filter: brightness(70%);
-    height: 200px;
+    max-height: 200px;
+    max-width: 99%;
     border: 8px solid white;
     /* border-radius: 5px; */
     box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.425); 
@@ -426,10 +450,12 @@ section .heading{
 }
 .under-heading{
     margin: 0px 10px;
-    padding: 30px 200px;
+    padding: 30px 1rem;
     font-weight: 400;
     font-size: 1.5rem;
     text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
 }
 hr{
     background-color: white;
@@ -449,39 +475,46 @@ hr{
 
 @media only screen and (max-width: 900px) {
 
-.navbar{
-    display: flex;
-    flex-direction: column;
+.logo{
+    /* width: 100vw; */
     justify-content: center;
     align-items: center;
 }
-.logo{
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+.navbar{
+    padding:.5rem 3rem;
 }
 .navbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+}
+
+.hamburgerButton{
+    display: block;
 }
 .navitems{
     text-align: center;
 }
 
+header #header-content .main-heading{
+    font-size: 3rem;
+}
+header #header-content p{
+    font-size: .8rem;
 }
 
-/* @media (max-width: 631px){
-
- .navbar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
-.navbox{
-    display:flex;
-    flex-direction: column;
+.photobox img{
+    max-height: 100px;
 }
 
-} */
+#location{
+    width: 100%;
+}
+
+section .heading{
+    font-size: 2.5rem;
+}
+
+#logo a{
+    font-size: 2rem;
+}
+ 
+}
