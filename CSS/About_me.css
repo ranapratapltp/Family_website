@@ -25,70 +25,6 @@ body::before{
     background: linear-gradient(rgb(255, 0, 0), rgb(86, 198, 226));
     clip-path: circle(12% at 95% 75%);
 }
-nav{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
-    background: rgba(0, 0, 0, 0.534);
-    width: 100%;
-    padding:10px 30px;
-    z-index: 1;
-}
-.navbar{
-    width: 100%;
-    margin: auto;
-    display: table;
-}
-#logo{
-    float: left;
-    padding: 15px 0px;
-}
-#logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 10px;
-}
-#logo span{
-    color: tomato;
-}
-.navbox{
-    float: right;
-}
-.navitems{
-    list-style: none;
-    display: inline-block;
-    margin: 21px 10px;   
-}
-.navitems a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    font-weight: 800;
-    padding: 10px 5px;
-    letter-spacing: .5px;
-    transition: .5s;
-}
-.navitems a:hover, .navitems .active{
-    color: tomato;
-}   
-.navitems a::after{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color:tomato;
-    bottom: 0px;
-    left: 0px;
-    transition: all .3s;
-}
-.navitems a:hover::after{
-    width: 100%;
-}
-.navitems .active::after{
-    width: 100%;
-}
 
 /* Section----> */
 
@@ -221,3 +157,4 @@ footer a{
 footer a:hover{
     color: rgb(0, 225, 255);
 }
+

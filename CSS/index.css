@@ -13,84 +13,7 @@ body{
     width: 100%;
     /* overflow-x: hidden; */
 }
-nav{
-    position: fixed;
-    top: 8px;
-    width: 100%;
-    z-index: 999;
-}
-.navbar{
-    /* filter: blur(8px); */
-    width: 98.5%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* border: 1px solid rgba(255, 255, 255, 0.25); */
-    background-color: rgba(0, 0, 0, 0.432);
-    backdrop-filter: blur(10px);
-    padding:10px 30px;
-    border-radius: 100px;
-    /* filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.5)); */
-    
-}
-#logo{
-    float: left;
-    padding: 15px 0px;
-}
-#logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 10px 0;
-}
-#logo span{
-    color: tomato;
-}
-.navbox{
-    float: right;
-}
-.hamburgerButton{
-    color: white;
-    display: none;
-}
-.navitems{
-    list-style: none;
-    display: inline-block;
-    margin: 21px 10px;   
-}
-.navitems a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    font-weight: 800;
-    padding: 10px 5px;
-    letter-spacing: .5px;
-    transition: .5s;
-}
-.navitems a:hover, .navitems .active{
-    color: tomato;
-}
-.navitems a::after{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color:tomato;
-    bottom: 0px;
-    left: 0px;
-    transition: all .3s;
-}
-.navitems a:hover::after{
-    width: 100%;
-}
-.navitems .active::after{
-    width: 100%;
-}
+
 header{
     min-height: 100vh;
     width: 100%;
@@ -182,6 +105,7 @@ section{
 .name-container{
     position: relative;
     width: 100%;
+    height: 20rem;
     margin: 30px 0px;
     display: flex;
     align-items: center;
@@ -189,11 +113,13 @@ section{
     flex-wrap: wrap;
 }
 .namebox{
-    /* position: relative; */
+    position: absolute;
+    /* padding: 10rem 0; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap:25px;
+    justify-content: center;
+    /* gap:25px; */
+    gap: 5px;
     flex-wrap: wrap;
 }
 .namebox .namecard{
@@ -263,12 +189,6 @@ section{
     transform: translateY(80px);
     transition: .5s;
 }
-#self{
-    transform: translateY(100px);
-}
-#self:hover{
-    transform: translateY(5px);
-}
 .namecard:hover .namecard-details{
     transform: translateY(0px);
 }
@@ -303,7 +223,7 @@ section{
     background-color: #a83535;
 }
 
-
+/* Gallery section */
 .photobox{
     width: 100%;
     display: flex;
@@ -326,10 +246,9 @@ section{
     overflow:hidden;
 }
 #gallery .navigation-arrow{
-    color: white;
+    width: fit-content;
     margin-top: 50px;
-    height: 50px;
-    width: 90px;
+    padding: .5rem 3rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -337,6 +256,7 @@ section{
     transition: .5s;
 }
 #gallery a{
+    color: white;
     text-decoration: none;
 }
 #gallery .navigation-arrow p{
@@ -349,18 +269,20 @@ section{
     cursor: pointer;
 }
 .address{
-    display: flex;
+    /* display: flex;
     justify-content:center;
     align-items:center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; */
 }
 .address .residence-box{
-    height: 300px;
-    width: 300px;
-    margin: 50px;
-    background-color: white;
-    border-radius: 10px;
+    /* height: 300px;
+    width: 300px; */
+    width: 100%;
+    height: 450px;
+    /* margin: 50px; */
+    margin: 5rem 0;
+    /* border-radius: 10px; */
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.267);
 }
 .address #description{
@@ -372,7 +294,7 @@ section{
     color: black;
 }
 .location-tag{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 100%;   
     width: 100%;
 }
@@ -382,7 +304,8 @@ section{
     text-transform:uppercase;
 }
 #tubelight{
-    width: 90%;
+    margin-top: 1rem;
+    /* width: 90%; */
 }
 
 .city-pics{
@@ -472,32 +395,27 @@ hr{
 
 /* Responsive css */
 
-@media only screen and (max-width: 900px) {
-
-.logo{
-    /* width: 100vw; */
-    justify-content: center;
-    align-items: center;
-}
-.navbar{
-    padding:.5rem 3rem;
-}
-.navbox{
-    display: none;
+@media only screen and (max-width: 1200px) {
+    .namebox{
+        padding: 0 1px;
+        row-gap: 60px;
+    }
+    .namebox .namecard{
+        width: 190px;
+    }
 }
 
-.hamburgerButton{
-    display: block;
-}
-.navitems{
-    text-align: center;
-}
+@media only screen and (max-width: 971px) {
 
 header #header-content .main-heading{
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 header #header-content p{
-    font-size: .8rem;
+    font-size: 1rem;
+}
+
+.name-container{
+    height: 40rem;
 }
 
 .photobox img{
@@ -516,4 +434,65 @@ section .heading{
     font-size: 2rem;
 }
  
+}
+
+
+@media only screen and (max-width: 581px) {
+    .name-container{
+        height: 60rem;
+    }
+    .namecard-details h1{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .namecard-details h1 span{
+        font-size: 1.5rem;
+    }
+    .namecard-details h2{
+        font-size: 1.7rem;
+    }
+    .namecard-details .btn-knowmore{
+        font-size: 1.2rem;
+    }
+    .sub-heading{
+        font-size: 2rem;
+    }
+    .city-pics img{
+        max-width: 48%;
+    }
+}
+@media only screen and (max-width: 387px) {
+    .namebox .namecard:nth-child(1) .namecard-details{
+        transform: translateY(100px);
+    }
+    .namebox .namecard:nth-child(1):hover .namecard-details{
+        transform: translateY(10px);
+    }
+    .namebox .namecard{
+        width: 180px;
+    }
+    
+}
+
+@media only screen and (max-width: 365px) {
+    .namebox .namecard{
+        width: 135px;
+    }
+    .namebox .namecard .imgbox{
+        height: 90px;
+        width: 90px;
+       
+    }
+    .namebox .namecard:hover .imgbox{
+        top: -30px;
+        height: 70px;
+        width: 70px;
+    }
+    
+}
+
+@media only screen and (max-width: 276px) {
+    .namebox .namecard{
+        width:45vw;
+    }
 }
