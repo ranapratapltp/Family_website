@@ -417,7 +417,10 @@ header #header-content p{
 .name-container{
     height: 40rem;
 }
-
+.photobox {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 .photobox img{
     max-height: 100px;
 }
@@ -476,7 +479,7 @@ section .heading{
 
 @media only screen and (max-width: 365px) {
     .namebox .namecard{
-        width: 135px;
+        width:45vw;
     }
     .namebox .namecard .imgbox{
         height: 90px;
@@ -491,8 +494,8 @@ section .heading{
     
 }
 
-@media only screen and (max-width: 276px) {
+/* @media only screen and (max-width: 276px) {
     .namebox .namecard{
         width:45vw;
     }
-}
+} */
