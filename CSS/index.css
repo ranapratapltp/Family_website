@@ -240,7 +240,7 @@ section{
     transition: .5s;
 }
 .photobox img:hover{
-    transform: scale(150%);
+    transform: scale(120%);
 }
 #gallery{
     overflow:hidden;
@@ -312,24 +312,24 @@ section{
     margin: 50px 0px;
     padding: 10px 10px;
     margin-inline: auto;
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 2rem;
 }
 .city-pics img{
     filter: brightness(70%);
-    max-height: 200px;
+    height: 200px;
     max-width: 99%;
-    border: 8px solid white;
+    /* border: 8px solid white; */
     /* border-radius: 5px; */
     box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.425); 
     transition: .3s;
 }
 .city-pics img:hover{
-    filter: brightness(110%); 
+    filter: brightness(105%); 
 
 }
 

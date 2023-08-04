@@ -34,6 +34,8 @@ header{
     height: 70vh;
     width: 100%;
     color: white;
+    display: grid;
+    place-items: center;
 }
 header::before{
     content: "";
@@ -55,7 +57,8 @@ header #header-content{
 }
 header #header-content .main-heading{
     font-size: 4.5rem;
-    margin-top: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 header #header-content p{
     /* padding: 0px 200px; */
@@ -158,16 +161,15 @@ section{
 }
 
 section .content{
-    margin: 0px;
     padding: 0px 10px;
 }
 section .content .index-box{
-    margin: 5px 0px;
+    margin: 2rem 0px;
     height: 50%;
 }
 section .content .member-index{
     width: 100%;
-    padding: 10px;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,6 +232,9 @@ section .content .member-index .photo img{
 }
 h3{
     margin: 10px 0px;
+}
+.about h6{
+    font-size: medium;
 }
 .about p span{
     font-weight: 600;
@@ -373,8 +378,8 @@ hr{
    
     .details-box:nth-child(3)::after{
         
-        min-height: 200px;
-        min-width: 200px;
+        min-height: 300px;
+        min-width: 300px;
         height: 25vw;
         width: 25vw;
         max-height: 300px;

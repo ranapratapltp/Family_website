@@ -3,6 +3,17 @@ nav{
     top: 8px;
     width: 100%;
     z-index: 999;
+    /* transform: translateY(100%); */
+    animation: move-down .7s ease-out 1 forwards;
+}
+@keyframes move-down{
+    from{
+        transform: translateY(-100%) rotateY(90deg);        
+        /* transform: rotateZ(90deg); */
+    }
+    to{       
+        transform: translateY(0%) rotateY(0deg);
+    }
 }
 .navbar{
     /* filter: blur(8px); */
@@ -117,15 +128,18 @@ nav{
 }
 
 .open{
+    opacity: 1;
     transform: translateX(0%) rotate3d(0);
     /* border-top-left-radius: 0;
     border-bottom-left-radius: 0; */
     /* transform: perspective(0); */
 
+
 }
 
 .close{
-    transform: translateX(100%) rotate3d(2, 10, 1, .7turn);
+    opacity: 0;
+    transform: translateX(100%) rotate3d(2, 12, 1, .7turn);
     /* transform: perspective(100px); */
 }
 
