@@ -320,9 +320,10 @@ section{
     gap: 2rem;
 }
 .city-pics img{
+    object-fit: cover;
     filter: brightness(70%);
     height: 200px;
-    max-width: 99%;
+    /* max-width: 99%; */
     /* border: 8px solid white; */
     /* border-radius: 5px; */
     box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.425); 
@@ -461,7 +462,8 @@ section .heading{
         font-size: 2rem;
     }
     .city-pics img{
-        max-width: 48%;
+        width: 98%;
+        height: auto;
     }
 }
 @media only screen and (max-width: 387px) {
