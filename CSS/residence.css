@@ -59,6 +59,8 @@ header #header-content p{
 section{
     margin: 0;
     padding: 10px 1rem;
+
+    background-image: linear-gradient(to right, #101827, #1a2b3d);
 }
 section .namastey{
     display: flex;
