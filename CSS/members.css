@@ -9,7 +9,8 @@ html{
 }
 body{
     font-size: 2rem;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
     height: 100%;
     width: 100%;
     overflow-x: hidden;

@@ -9,7 +9,9 @@ html{
 }
 body{
     font-size: 2rem;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
     width: 100%;
     /* overflow-x: hidden; */
     /* background-color:hsla(0,100%,50%,1); */
@@ -379,7 +381,7 @@ footer a:hover{
 section .heading{
     text-align: center; 
     font-size: 5rem;
-    margin-top: 50px;
+    margin-top: 1rem;
     padding: 30px;
 }
 .under-heading{
@@ -444,7 +446,7 @@ header #header-content p{
 }
 
 section .heading{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 #logo a{
@@ -455,6 +457,18 @@ section .heading{
 
 
 @media only screen and (max-width: 581px) {
+    body{
+        background-color:#eeff99;
+        background-image:
+        radial-gradient(at 40% 20%, hsla(28,100%,80%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189,100%,80%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+    
+    }
     .name-container{
         height: 60rem;
     }

@@ -4,6 +4,7 @@ nav{
     width: 100%;
     z-index: 999;
     /* transform: translateY(100%); */
+    
     animation: move-down .7s ease-out 1 forwards;
 }
 @keyframes move-down{
@@ -57,12 +58,12 @@ nav{
     margin: 21px 10px;   
 }
 .navitems a{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
     position: relative;
-    font-weight: 800;
+    /* font-weight: 400; */
     padding: 10px 5px;
     letter-spacing: .5px;
     transition: .5s;
