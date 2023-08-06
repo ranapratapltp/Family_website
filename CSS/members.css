@@ -41,6 +41,7 @@ header{
 header::before{
     content: "";
     position: absolute;
+    top: 0;
     background: url('/images/f2.jpg') no-repeat center center/cover;
     z-index: -1;
     height: 70%;
@@ -48,7 +49,8 @@ header::before{
     filter: brightness(60%);
 }
 header #header-content{
-    height: 70%;
+
+    /* height: 70%; */
     /* width: 100%; */
     /* padding: 0px 200px; */
     display: flex;

@@ -20,7 +20,7 @@ body{
 
 /* content */
 header{
-    height: 70vh;
+    min-height: 70vh;
     color: white;
     display: grid;
     place-items: center;
@@ -28,14 +28,15 @@ header{
 header::before{
     content: "";
     position: absolute;
+    top: 0;
     background: url('/images/meropyaroHathras.jpg') no-repeat center center/cover;
     z-index: -1;
-    height: 70%;
+    height: 100%;
     width: 100%;
     filter: brightness(60%);
+    /* border: 2px solid red; */
 }
 header #header-content{
-    height: 70%;
     width: 100%;
     max-width: 500px;
     padding: 0px 1rem;

@@ -30,6 +30,7 @@ header{
 header::before{
     content: "";
     position: absolute;
+    top: 0;
     background: url('/images/f3.jpg') no-repeat center center/cover;
     z-index: -1;
     height: 80%;
@@ -64,7 +65,7 @@ section{
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .heading-box{
-    padding: 5vh 0;
+    padding: 4vh 0;
     
 }
 h1{
@@ -167,9 +168,9 @@ hr{
     h1{
         font-size: 5rem;
     }
-    section{
+    /* section{
         padding:20px 10px;
-    }
+    } */
     /* .gallery-box{
         gap: 0px;
     } */
